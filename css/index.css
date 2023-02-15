@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: rgb(158, 158, 158);
+}
+/* estilos de las anclas*/
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black
+}
+
+/*empieza estilos header y nav */
+.cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FFEB3B;
+}
+
+.cabecera__containerLogo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cabecera__containerLogo img{
+    height: 70px;
+    width: 70px;
+}
+
+.cabecera__nav{
+    display: flex;
+    font-size: 20px;
+    margin-right: 200px;
+}
+
+.cabecera__nav__lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.cabecera__nav__lista li{
+    margin: 0px 10px;
+}
+.cabecera__nav__lista li a{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+/*termina estilos header y nav*/
+/*estilo del separador de contenido */
+.divisorContenido{
+    background-color: #BDBDBD;
+}
+
+/* estilo del carrousel que voy agregar mas adelante */
+.section__contenidoPrincipal{
+    background-color: #F5F5F5;
+}
+
+.section__contenedorTittle_1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section__contenedorTittle_1 h1{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section__contenedorImagenesPrincipales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__containerCarrousel_img .img{
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   margin: 10px;
+   width: 900px;
+    height: 600px;
+}
+
+/* estilo de section album mas escuchado */
+.section__contenidoAlbum{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.section__container__infoAlbum{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    height: 600px;
+    background-color: #616161;
+    border-radius: 30px;
+
+    /* generé la sombra desde una pagina que nos brindó la profesora */
+    box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+    -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+    -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+}
+.section__containerPortadaAlbum{
+    vertical-align: middle;
+}
+.tituloAlbum{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+.parrafoAlbum{
+    text-align: left;
+    inline-size: 1250px;
+    overflow-wrap: break-word;
+    margin: 0px 50px;
+    margin-bottom: 100px;
+    color: #F5F5F5;
+}
+
+.parrafoAlbum-fecha{
+    display: flex;
+    justify-content: center;
+    inline-size: 1250px;
+    overflow-wrap: break-word;
+    margin: 0px 50px;
+    margin-bottom: 100px;
+}
+.strong{
+    color: #000000;
+    font-weight: bold;
+}
+.italic{
+    color: #212121;
+    font-style: italic;
+}
+.container__imgAlbum{
+    vertical-align: middle;
+}
+.container__imgAlbum .imgAlbum{
+    width: 400px;
+    height: 250px;
+}
+
+/* SECTION VIDEOS EMBED */
+
+.section__embedVid{
+    height: 100vh;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section__embedVid-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+iframe{
+    width: 600px;
+    height: 400px;
+    margin: 0px 50px;
+    padding-top: 10px;
+}
+
+.section__containerEmbed{
+    display: flex;
+}
+
+.section__embedVid__verMas{
+    margin-top: 100px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* ---- ESTILOS ALBUMES.HTML ----*/
+.section__contenidoAlbumes{
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+.containerPadre{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+
+    margin: 20px;
+    padding: 20px;
+}
+.container__carta{
+    display: flex;
+}
+.containerAlbum{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-self: center;
+    margin: 20px;
+}
+.tituloAlbumes{
+    text-align: center;
+}
+.fechaAlbumes{
+    text-align: center;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.container__buttons{
+    display: flex;
+    justify-content: center;
+}
+.container__buttons button{
+    margin: 10px 10px;
+}
+/*
+.container__imgAlbumes .imagenAlbum{
+
+
+}*/
+.imagenAlbum{
+    height: 400px;
+    width: 400px;
+}
+
+/* ---- TERMIA ESTILOS ALBUMES.HTML ----*/
+
+/* ---- INICIA ESTILOS NOSOTROS.HTML */
+.section__origenSoda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+.container__tituloInicio{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.container__OrigenSoda_Foto{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.img__origenSoda{
+    height: 300px;
+    width: 400px;
+}
+.img__Cerati{
+    height: 400px;
+    width: 400px;
+}
+.img__Cerati-mid{
+    height: 400px;
+    width: 500px;
+}
+.container__padre-fotos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.container__img{
+    display: flex;
+    justify-content: center;
+    flex-direction: space-evenly;
+    margin: 10px;
+    margin-top: -20px;
+}
+.section__origenSoda{
+    height: 100%;
+}
+.container__contenidoSoda{
+    background-color: #616161;
+    border-radius: 30px;
+    margin: 125px;
+    box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+    -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+    -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+}
+.containerInfoOrigen{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    text-decoration: underline;
+}
+.texto-parrafo{
+    margin: 50px;
+    color: #d2cfcf;
+}
+/* ---- TERMINA ESTILOS NOSOTROS.HTML */
+
+/* ---- ARRANCA ESTILOS TIMELINE.HTML */
+.section__timeline{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* ---- TERMINA ESTILOS TIMELINE.HTML */
+
+/* estilo del footer */
+.footer{
+    height: 100px;
+    padding: 1em 0;
+    align-items: center;
+}
+.footer__containerRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.footer__linkredes{
+    margin: 0px 10px;
+}
+.img__redes{
+    height: 34px;
+}
+.img__redes:hover{
+    height: 40px;
+}
+.footer__containerCopy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
