@@ -300,7 +300,11 @@ iframe{
 }
 .img__Cerati-mid{
     height: 400px;
-    width: 500px;
+    width: 600px;
+}
+.img__Cerati-der{
+    height: 400px;
+    widows: 400px;
 }
 .container__padre-fotos{
     display: flex;

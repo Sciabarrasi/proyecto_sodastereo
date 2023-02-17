@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soda Stereo</title>
     <link rel="icon" href="./favicon3-sinfondo.ico">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -29,24 +29,40 @@
     <hr class="divisorContenido"> <!-- SEPARADOR DE CONTENIDO-->
 
     <main>
-        <section class="section__contenidoPrincipal">
+        <section class="container">
+            <!-- class="section__contenidoPrincipal" class original-->
             <!-- EN ESTA PARTE VA UN CARROUSEL-->
-            <div class="section__contenedorTittle_1">
-                <h1>Nuestras Fotos más icónicas</h1>
+            <div class="section__contenedorTittle_1 mb-3">
+                <h1>Nuestras Fotos Más Icónicas</h1>
             </div>
             <!-- Aca quiero poner un carrousel de imagenes de la banda, apenas lo demos en clase lo agrego -->
             <!-- Por el momento solo dejo las fotos -->
-            <div class="section__contenedorImagenesPrincipales">
-                <div class="section__containerCarrousel_img">
-                    <img class="img" src="./assets/img/SodaFotoPortada.png" alt="Grupo Soda Stereo">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="section__containerCarrousel_img">
-                    <img class="img" src="./assets/img/SodaFotoPortada2.png" alt="Grupo Soda Stereo">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/SodaFotoPortada.png" class="d-block w-100" alt="Soda Stereo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/SodaFotoPortada2.png" class="d-block w-100" alt="Soda Stereo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/SodaFotoPortada3.png" class="d-block w-100" alt="Soda Stereo">
+                  </div>
                 </div>
-                <div class="section__containerCarrousel_img">
-                    <img class="img" src="./assets/img/SodaFotoPortada3.png" alt="Grupo Soda Stereo">
-                </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             <!-- TERMINA SECTION CARROUSEL-->
         </section>
 
@@ -106,5 +122,6 @@
             <p>Copyright © 2022 - Desarrollado y diseñado por <span>Gianluca Sciabarrasi</span></p>
         </div>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
