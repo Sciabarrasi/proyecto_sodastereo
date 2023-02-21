@@ -23,6 +23,12 @@ a:active {
 }
 
 /*empieza estilos header y nav */
+/* ----------------
+   Las siguientes lineas estan comentadas
+   porque decidí agregar el estilo de bootstrap
+   y modificarlo a mi gusto
+   ---------------- */
+/*
 .cabecera{
     display: flex;
     flex-wrap: wrap;
@@ -60,15 +66,41 @@ a:active {
     padding: 0;
     display: inline-block;
 }
+*/
+.colorNav{
+    background-color: #FFEB3B !important;
+}
+.flexible{
+    width: 100%;
+    justify-content: flex-end;
+}
+.flexible .nav-item .nav-link:hover{
+    color: #000000;
+}
+.contenedorLogo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedorLogo img{
+    height: 70px;
+    width: 70px;
+}
+
+
 /*termina estilos header y nav*/
 /*estilo del separador de contenido */
 .divisorContenido{
     background-color: #BDBDBD;
 }
 
-/* estilo del carrousel que voy agregar mas adelante */
-.section__contenidoPrincipal{
-    background-color: #F5F5F5;
+/* estilo del carrousel */
+.carousel-item{
+    height: 80vh;
+}
+.imgCarousel{
+    height: 800px;
+    width: 800px;
+    object-fit: cover;
 }
 
 .section__contenedorTittle_1{
@@ -325,7 +357,7 @@ iframe{
 .container__contenidoSoda{
     background-color: #616161;
     border-radius: 30px;
-    margin: 125px;
+    margin: 125px 100px;
     box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
     -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
     -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
@@ -346,15 +378,48 @@ iframe{
 /* ---- ARRANCA ESTILOS TIMELINE.HTML */
 .section__timeline{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
 }
+.contenedorTitulo-cartas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.section__cards{
+    height: 80vh;
+}
+.card-group{
+    width: 80%;
+    margin: 100px auto 0px auto;
+    text-align: center;
+}
+
+.card{
+    align-items: center;
+}
+
+.card-img-top{
+    width:80%;
+    object-fit: cover;
+}
+.imgCard{
+    height: 300px;
+    width: 300px;
+}
 /* ---- TERMINA ESTILOS TIMELINE.HTML */
 
 /* ---- ARRANCA ESTILOS UNITE.HTML ---- */
+.section__form{
+    height: 100vh;
+}
 
-/* ---- TERMINA ESTILOS UNITE.HTML ---- */
+
+
+/*--- TERMINA ESTILOS UNITE.HTML ---- */
 
 /* estilo del footer */
 .footer{
@@ -380,4 +445,17 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .card-group{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carousel-item{
+        height: initial;
+    }
 }

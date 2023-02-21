@@ -11,19 +11,36 @@
 </head>
 
 <body>
-    <header class="cabecera">
-        <div class="cabecera__containerLogo">
-            <a href="#"><img src="../assets/img/logo-sodastereo-sinfondo.png" alt="Logo"></a>
-        </div>
-        <nav class="cabecera__nav">
-            <ul class="cabecera__nav__lista">
-                <li><a class="links-nav" href="../index.html">Inicio</a></li>
-                <li><a class="links-nav" href="./albumes.html">Álbumes</a></li>
-                <li><a class="links-nav" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="links-nav" href="#">Timeline</a></li>
-                <li><a class="links-nav" href="./unite.html">Unite</a></li>
-            </ul>
-        </nav>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light colorNav">
+            <div class="container-fluid contenedorLogo">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo-sodastereo-sinfondo.png" alt="Logo">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flexible">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./albumes.html">Álbumes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Timeline</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./unite.html">Unite</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
         <hr> <!-- SEPARADOR DE CONTENIDO-->
 
@@ -109,31 +126,34 @@
                     </div>
                 </div>
             </section>
+
             <!-- COLOCAR TARJETAS DE INTEGRANTES DE SODA-->
             <hr class="divisorContenido">
-            <section class="container">
-                <h2>Integrantes de Soda Stereo</h2>
 
+            <section class="container section__cards">
+                <div class="d-flex justify-content-center m-3">
+                    <h2>Integrantes de Soda Stereo</h2>
+                </div>
                 <div class="card-group">
                     <div class="card">
-                      <img src="../assets/img/gustavo_cerati.png" class="card-img-top" alt="Gustavo Cerati">
+                      <img src="../assets/img/gustavo_cerati.png" class="card-img-top imgCard" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title">Gustavo Cerati</h5>
-                        <p class="card-text">Gustavo Adrián Cerati, vocalista, compositor y guitarra principal de <span class="strong">Soda Stereo</span>.</p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       </div>
                     </div>
                     <div class="card">
-                      <img src="../assets/img/zeta_bosio.png" class="card-img-top" alt="Zeta Bosio">
+                      <img src="../assets/img/zeta_bosio.png" class="card-img-top imgCard" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title">Zeta Bosio</h5>
-                        <p class="card-text">Héctor Pedro Juan Bosio, más conocido como "Zeta Bosio", fue el bajista de <span class="strong">Soda Stereo</span></p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                       </div>
                     </div>
                     <div class="card">
-                      <img src="../assets/img/charly_alberti.png" class="card-img-top" alt="Charly Alberti">
+                      <img src="../assets/img/charly_alberti.png" class="card-img-top imgCard" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title">Charly Alberti</h5>
-                        <p class="card-text">Carlos Alberti Ficicchia, más conocido como Charly Alberti, fue el baterista de <span class="strong">Soda Stereo</span></p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                       </div>
                     </div>
                   </div>

@@ -11,61 +11,79 @@
 </head>
 
 <body>
-    <header class="cabecera">
-        <div class="cabecera__containerLogo">
-            <a href="#"><img src="../assets/img/logo-sodastereo-sinfondo.png" alt="Logo"></a>
-        </div>
-        <nav class="cabecera__nav">
-            <ul class="cabecera__nav__lista">
-                <li><a class="links-nav" href="../index.html">Inicio</a></li>
-                <li><a class="links-nav" href="./albumes.html">Álbumes</a></li>
-                <li><a class="links-nav" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="links-nav" href="./timeline.html">Timeline</a></li>
-                <li><a class="links-nav" href="#">Unite</a></li>
-            </ul>
-        </nav>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light colorNav">
+            <div class="container-fluid contenedorLogo">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo-sodastereo-sinfondo.png" alt="Logo">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flexible">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./albumes.html">Álbumes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./timeline.html">Timeline</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./unite.html">Unite</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-        <hr> <!-- SEPARADOR DE CONTENIDO-->
+        <hr class="divisorContenido"> <!-- SEPARADOR DE CONTENIDO-->
 
-        <main class="main-unite">
-            <section> <!-- ACA VA UN FORM PARA AFILIARSE A SODA STEREO-->
-                <div>
+        <main>
+            <section class="section__form d-flex flex-colum justify-content-center"> <!-- ACA VA UN FORM PARA AFILIARSE A SODA STEREO-->
+                <div class="contenedorForm-titulo">
                     <h1>Unite a <span>Soda Stereo</span>!</h1>
-                <div class="containerForm">
-                    <form action="">
-                        <div class="containerInput_textNombre">
-                                <label for="nombre">Ingrese su nombre</label>
-                                <input type="text" required>
-                        </div>
-                        <div class="containerInput_textApellido">
-                                <label for="apellido">Ingrese su apellido</label>
-                                <input type="text" required>
-                        </div>
-                        <div class="containerInput_Email">
-                                <label for="email">Ingrese su email</label>
-                                <input type="email" placeholder="ejemplo@gmail.com" required>
-                        </div>
-                        <div class="containerInput_Tel">
-                                <label for="tel">Indique su Telefono</label>
-                                <input type="tel">
-                        </div>
-                        <div>
-                                <h4>¿Cómo conoció a Soda Stereo?</h4>
-                                <label for="text">Deje su respuesta aquí</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                            <div class="containerButton">
-                                <input type="submit" value="Enviar Formulario">
-                                <input type="reset" name="" id="" value="Rehacer">
+                </div>
+                    <div class="containerForm">
+                        <form action="">
+                            <div class="containerInput m-2">
+                                    <label for="nombre">Ingrese su nombre</label>
+                                    <input type="text" required>
                             </div>
+                            <div class="containerInput m-2">
+                                    <label for="apellido">Ingrese su apellido</label>
+                                    <input type="text" required>
+                            </div>
+                            <div class="containerInput m-2">
+                                    <label for="email">Ingrese su email</label>
+                                    <input type="email" placeholder="ejemplo@gmail.com" required>
+                            </div>
+                            <div class="containerInput m-2">
+                                    <label for="tel">Indique su Telefono</label>
+                                    <input type="tel">
+                            </div>
+                            <div class="containerInput m-2">
+                                    <h4>¿Cómo conoció a Soda Stereo?</h4>
+                                    <label for="text">Deje su respuesta aquí</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                                <div class="containerButton m-2">
+                                    <input type="submit" value="Enviar Formulario">
+                                    <input type="reset" name="" id="" value="Rehacer">
+                                </div>
                         </form>
                     </div>
                 </div>
             </section>
         </main>
 
-        <hr> <!-- SEPARADOR DE CONTENIDO-->
+        <hr class="divisorContenido"> <!-- SEPARADOR DE CONTENIDO-->
 
         <footer class="footer">
             <div class="footer__containerRedes">
