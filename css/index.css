@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
@@ -12,7 +13,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
-    background-color: rgb(158, 158, 158);
+    background-color: #F5F5F5 !important;
 }
 /* estilos de las anclas*/
 a:link,
@@ -85,15 +86,21 @@ a:active {
     height: 70px;
     width: 70px;
 }
-
+.colorMain{
+    background-color: #F5F5F5;
+}
 
 /*termina estilos header y nav*/
 /*estilo del separador de contenido */
 .divisorContenido{
-    background-color: #BDBDBD;
+    background-color: #BDBDBD !important;
 }
 
 /* estilo del carrousel */
+.contenedorCarousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
 .carousel-item{
     height: 80vh;
 }
@@ -101,6 +108,9 @@ a:active {
     height: 800px;
     width: 800px;
     object-fit: cover;
+
+    margin: 0 50px;
+    flex: 1 0 auto;
 }
 
 .section__contenedorTittle_1{
@@ -146,16 +156,13 @@ a:active {
 .section__container__infoAlbum{
     display: flex;
     align-items: center;
-    align-content: center;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
-    height: 600px;
+    margin: 40px 200px;
+    border: 5px solid #000000;
+    border-radius: 10px;
     background-color: #616161;
     border-radius: 30px;
 
@@ -165,7 +172,7 @@ a:active {
     -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
 }
 .section__containerPortadaAlbum{
-    vertical-align: middle;
+    text-align: center;
 }
 .tituloAlbum{
     text-align: center;
@@ -249,7 +256,7 @@ iframe{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     column-gap: 10px;
-    row-gap: 15px;
+    row-gap: 100px;
     grid-template-areas:
     ". . ."
     ". . ."
@@ -295,7 +302,7 @@ iframe{
     justify-content: center;
 }
 .container__buttons button{
-    margin: 10px 10px;
+    margin: 10px;
 }
 .imagenAlbum{
     height: 400px;
@@ -383,15 +390,58 @@ iframe{
     flex-direction: column;
     flex-wrap: wrap;
 }
+.timelineTittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: -1px 5px 7px rgba(0,0,0,0.40);
+}
+.containerTimeline_contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerTimeline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contenedorInfoGiras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin: 40px 200px;
+    border: 5px solid #6e6e6e;
+    border-radius: 10px;
+    background-color: rgb(207, 210, 210);
+}
+.containerInfoTimele{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerGiras-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.contenedorTexto{
+    margin: 30px;
+}
+
+
 .contenedorTitulo-cartas{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.section__cards{
-    height: 80vh;
-}
 .card-group{
     width: 80%;
     margin: 100px auto 0px auto;
@@ -415,16 +465,47 @@ iframe{
 /* ---- ARRANCA ESTILOS UNITE.HTML ---- */
 .section__form{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-
+.contenedor__titulo-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+.containerForm{
+    width: 300px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.titulo-form{
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.form-input .form-textArea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+textarea{
+    min-height: 100px !important;
+    max-height: 200px !important;
+    max-width: 100% !important;
+}
 
 /*--- TERMINA ESTILOS UNITE.HTML ---- */
 
 /* estilo del footer */
 .footer{
-    height: 100px;
+    height: 100%;
     padding: 1em 0;
+    background-color: #616161;
 }
 .footer__containerRedes{
     display: flex;
@@ -446,11 +527,38 @@ iframe{
     align-items: center;
     justify-content: center;
 }
+.footer__containerCopy p{
+    color: #f5f5f5c8;
+}
 
 @media screen and (min-width: 0px) and (max-width: 768px){
+    .contenedorInfoGiras{
+        margin: 30px;
+    }
+    .containerTimeline_contenido p{
+        text-align: justify;
+    }
     .card-group{
         display: flex;
         flex-flow: column wrap;
+    }
+    .section__embedVid{
+        vertical-align: top;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__containerRedes{
+        flex-direction: row;
+    }
+    .footer__linkredes{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer__containerCopy{
+        margin-top: 10px;
+        text-align: center;
     }
 }
 
