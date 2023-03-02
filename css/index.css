@@ -362,6 +362,11 @@ iframe{
     height: 100%;
 }
 .container__contenidoSoda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: #616161;
     border-radius: 30px;
     margin: 125px 100px;
@@ -477,7 +482,7 @@ iframe{
     margin: 40px;
 }
 .containerForm{
-    width: 300px;
+    width: 500px;
     background:rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
     border-radius: 15px;
@@ -532,6 +537,10 @@ textarea{
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
+    .container__contenidoSoda{
+        display: flex;
+        flex-direction: column;
+    }
     .contenedorInfoGiras{
         margin: 30px;
     }
@@ -544,6 +553,12 @@ textarea{
     }
     .section__embedVid{
         vertical-align: top;
+    }
+    .contenedor__titulo-form{
+        text-align: center;
+    }
+    .containerForm{
+        width: 300px;
     }
     .footer{
         flex-direction: column;
@@ -559,6 +574,8 @@ textarea{
     .footer__containerCopy{
         margin-top: 10px;
         text-align: center;
+        inline-size: 400px;
+        overflow-wrap: break-word;
     }
 }
 
