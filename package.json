@@ -1,0 +1,19 @@
+{
+  "name": "sodastereo",
+  "version": "1.0.0",
+  "description": "esta es una prueba de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sciabarrasi/soda_stereo_GianlucaSciabarrasi.git"
+  },
+  "author": "gianluca sciabarrasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sciabarrasi/soda_stereo_GianlucaSciabarrasi/issues"
+  },
+  "homepage": "https://github.com/Sciabarrasi/soda_stereo_GianlucaSciabarrasi#readme"
+}
