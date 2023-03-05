@@ -1,22 +1,7 @@
 @charset "UTF-8";
 /* VARIABLES */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700; }
-
-body {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 100%;
-  background-color: #F5F5F5 !important; }
-
 /* estilos de las anclas*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 a:link,
 a:visited,
 a:active {
@@ -33,6 +18,21 @@ a:active {
 .italic {
   color: #212121;
   font-style: italic; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700; }
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: #F5F5F5 !important; }
 
 .colorNav {
   background-color: #FFEB3B !important; }
