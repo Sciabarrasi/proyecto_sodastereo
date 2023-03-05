@@ -1,0 +1,73 @@
+.section__timeline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .timelineTittle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: -1px 5px 7px rgba(0,0,0,0.40);
+    }
+    .containerTimeline_contenido{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerTimeline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .contenedorInfoGiras{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 40px 200px;
+            border: 5px solid $color-primario;
+            border-radius: 10px;
+            background-color: rgb(207, 210, 210);
+            .containerGiras-titulo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            .contenedorTexto{
+                margin: 30px;
+            }
+        }    
+    }
+}
+
+.section__integrantes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .contenedorTitulo-cartas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-group{
+        width: 80%;
+        margin: 100px auto 0px auto;
+        text-align: center;
+        .card{
+            align-items: center;
+            .card-img-top{
+                width: 80%;
+                object-fit: cover;
+            }
+            .imgCard{
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }
+}

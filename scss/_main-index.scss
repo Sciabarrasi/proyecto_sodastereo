@@ -1,0 +1,122 @@
+.colorMain{
+    background-color: $color-bg;
+    .section__contenedorTittle_1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .section__contenedorTittle_1 h1{
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .contenedorCarousel{
+        display: flex;
+        flex-wrap: nowrap;
+        .carousel-item{
+            height: 80vh;
+            .imgCarousel{
+                height: 800px;
+                width: 800px;
+                object-fit: cover;
+                margin: 0 50px;
+                flex: 1 0 auto;
+            }
+        }
+    }
+}
+
+/* estilo de section album mas escuchado */
+.section__contenidoAlbum{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color-bg;
+    position: relative;
+    .section__container__infoAlbum{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 40px 200px;
+        border: 5px solid #000000;
+        border-radius: 10px;
+        background-color: $color-secundario;
+        border-radius: 30px;
+        /* generé la sombra desde una pagina que nos brindó la profesora */
+        box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+        -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+        -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
+        .section__containerPortadaAlbum{
+            text-align: center;
+            .tituloAlbum{
+                text-align: center;
+                text-decoration: underline;
+                margin-bottom: 30px;
+            }
+        }
+        .parrafoAlbum-fecha{
+            display: flex;
+            justify-content: center;
+            inline-size: 1250px;
+            overflow-wrap: break-word;
+            margin: 0px 50px;
+            margin-bottom: 100px;
+        }
+        .parrafoAlbum{
+            text-align: left;
+            inline-size: 1250px;
+            overflow-wrap: break-word;
+            margin: 0px 50px;
+            margin-bottom: 120px;
+            color: $color-bg;
+        }
+        .container__imgAlbum{
+            display: flex;
+            vertical-align: middle;
+            margin-top: -150px;
+            .imgAlbum{
+                width: 400px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+/* SECTION VIDEOS EMBED */
+.section__embedVid{
+    height: 100vh;
+    background-color: $color-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .section__embedVid-tittle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .section__containerEmbed{
+        display: flex;
+        .section__embedVid__videos{
+            display: flex;
+            iframe{
+                width: 600px;
+                height: 400px;
+                margin: 0px 50px;
+                padding-top: 10px;
+            }
+        }
+    }
+    .section__embedVid__verMas{
+        margin-top: 100px;
+        font-size: 20px;
+        .section__embedVid__verMas a p{
+            text-decoration: underline;
+        }
+    }
+}

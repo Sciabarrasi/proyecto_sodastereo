@@ -1,0 +1,40 @@
+.footer{
+    height: 100%;
+    padding: 1em 0;
+    background-color: $color-footer;
+    .footer__containerRedes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        .footer__linkredes{
+            margin: 0px 10px;
+            .img__redes{
+                height: 34px;
+                &:hover{
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .footer__containerCopy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            color: #f5f5f5c8;
+        }
+    }
+}
+
+
+
+/*
+.footer__containerCopy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__containerCopy p{
+    color: #f5f5f5c8;
+}*/

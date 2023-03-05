@@ -1,0 +1,18 @@
+/* estilos de las anclas*/
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.divisorContenido{
+    background-color: $color-divisorCont !important;
+}
+.strong{
+    color: $color-strong;
+    font-weight: bold;
+}
+.italic{
+    color: $color-italic;
+    font-style: italic;
+}

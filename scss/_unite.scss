@@ -1,0 +1,35 @@
+.section__form{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .contenedor__titulo-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+    }
+    .containerForm{
+        width: 500px;
+        background:rgba(0, 0, 0, 0.3);
+        padding: 10px 20px;
+        border-radius: 15px;
+        .titulo-form{
+            text-align: center;
+            margin: 0px;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .form-input .form-textArea{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        textarea{
+            min-height: 100px !important;
+            max-height: 200px !important;
+            max-width: 100% !important;
+        }
+    }
+}
