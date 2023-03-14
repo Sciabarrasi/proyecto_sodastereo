@@ -71,7 +71,7 @@ body {
       justify-content: center;
       flex-direction: column;
       flex-wrap: wrap;
-      background-color: #616161;
+      background-color: #605d5d;
       border: 5px solid #2a2828;
       border-radius: 20px; }
     .colorMain .section__contenedor-principal .contenedor__titulo {
@@ -1330,7 +1330,7 @@ body {
       justify-content: center;
       flex-direction: column;
       flex-wrap: nowrap;
-      background-color: #616161;
+      background-color: #605d5d;
       border: 5px solid #2a2828;
       border-radius: 20px;
       animation: movimiento 1s;

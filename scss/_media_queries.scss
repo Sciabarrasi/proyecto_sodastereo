@@ -1055,7 +1055,7 @@
             justify-content: map-get($estilos-div, justifyC);
             flex-direction: map-get($estilos-div, directionC);
            flex-wrap: map-get($estilos-div, noWrapped);
-           background-color: $color-secundario;
+           background-color: $color-bgDiv;
            border: map-get($estilos-bordes, borde-solid-principal);
            border-radius: map-get($estilos-bordes, radio-borde20);
            animation: movimiento 1s;
