@@ -1,5 +1,4 @@
 .footer{
-    height: 100%;
     padding: 1em 0;
     background-color: $color-footer;
     .footer__containerRedes{
@@ -18,9 +17,8 @@
         }
     }
     .footer__containerCopy{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend .footer__containerRedes;
+        margin: 0px;
         p{
             color: #f5f5f5c8;
         }

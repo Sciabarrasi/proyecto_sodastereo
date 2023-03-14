@@ -1,0 +1,10 @@
+/* este keyframe hace la animacion de giro
+    en las redes del footer */
+@keyframes animacionAncla{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,11 +1,40 @@
 /* VARIABLES */
 $color-itemNav: #000000;
+$color-subr: #131212;
 $color-nav-li: #495057;
 $color-nav: #FFEB3B;
 $color-divisorCont: #BDBDBD;
 $color-primario: #6e6e6e;
 $color-secundario: #616161;
 $color-bg: #F5F5F5;
+$color-texto: #e9e5e5;
 $color-italic: #212121;
 $color-strong: #000000;
 $color-footer: #212121;
+
+$estilos-bordes: (
+    borde-solid-principal: 5px solid #2a2828,
+    radio-borde15: 15px,
+    radio-borde10: 10px,
+    radio-borde20: 20px,
+    radio-borde30: 30px,
+);
+
+$estilos-div: (
+    d-flex: flex,
+    alignC: center,
+    justifyC: center,
+    directionC: column,
+    directionR: row,
+    noWrapped: nowrap,
+    wrapped: wrap,
+    around: space-around,
+);
+
+$estilos-textos:(
+    colorTitulos: #F5F5F5,
+    colorTexto: #f5f5f5c8,
+    textoC: center,
+    textoSubr: underline,
+    sombraTexto: -1px 5px 7px rgba(0,0,0,0.40),
+);

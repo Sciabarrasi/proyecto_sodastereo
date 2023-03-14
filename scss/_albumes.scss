@@ -3,6 +3,7 @@
     background-color: $color-bg;
     .section__contenedorTittle_1{
         text-align: center;
+        text-decoration: underline;
     }
     .containerPadre{
         display: grid;
@@ -10,7 +11,7 @@
         grid-template-rows: repeat(3,1fr);
         column-gap: 10px;
         row-gap: 100px;
-        grid-template-areas: 
+        grid-template-areas:
         ". . ."
         ". . ."
         ". . .";
@@ -43,15 +44,41 @@
             align-items: center;
             justify-content: center;
             .imagenAlbum{
-                height: 400px;
-                width: 400px;
+                height: 350px;
+                width: 350px;
             }
         }
         .container__buttons{
+            height: 90px;
             display: flex;
             justify-content: center;
-            button{
-                margin: 10px;
+            .button__spotify{
+                margin: 20px 20px;
+                font-size:18px;
+                width:120px;
+                height:50px;
+                border-width:3px;
+                color:#fff;
+                border-color:#18ab29;
+                font-weight:bold;
+                border-top-left-radius:27px;
+                border-top-right-radius:27px;
+                border-bottom-left-radius:27px;
+                border-bottom-right-radius:27px;
+                text-shadow: 0px 0px 0px #2f6627;
+                background:linear-gradient(#44c767, #5cbf2a);
+                &:hover{
+                    background: linear-gradient(#5cbf2a, #44c767);
+                }
+            }
+            .button__youtube{
+                @extend .button__spotify;
+                box-shadow: 0px 0px 0px 3px #8a2a21;
+                text-shadow: 0px 1px 0px #810e05;
+                background:#c62d1f;
+                &:hover{
+                    background: #f24437;
+                }
             }
         }
     }

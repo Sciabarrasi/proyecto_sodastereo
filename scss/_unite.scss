@@ -1,5 +1,5 @@
 .section__form{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +9,9 @@
         align-items: center;
         justify-content: center;
         margin: 40px;
+        h1{
+            text-align: center;
+        }
     }
     .containerForm{
         width: 500px;

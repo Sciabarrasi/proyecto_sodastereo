@@ -16,17 +16,9 @@
         justify-content: center;
     }
     .containerTimeline{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @extend .section__timeline;
         .contenedorInfoGiras{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            flex-wrap: wrap;
+            @extend .containerTimeline;
             margin: 40px 200px;
             border: 5px solid $color-primario;
             border-radius: 10px;
@@ -40,7 +32,7 @@
             .contenedorTexto{
                 margin: 30px;
             }
-        }    
+        }
     }
 }
 
@@ -50,9 +42,7 @@
     justify-content: center;
     flex-wrap: wrap;
     .contenedorTitulo-cartas{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend .section__integrantes;
     }
     .card-group{
         width: 80%;

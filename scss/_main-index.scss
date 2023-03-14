@@ -1,28 +1,40 @@
 .colorMain{
     background-color: $color-bg;
-    .section__contenedorTittle_1{
+    .section__contenedor-principal{
+        height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       .contenedor-principal{
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        .section__contenedorTittle_1 h1{
+        background-color: $color-secundario;
+        border: 5px solid #2a2828;
+        border-radius: 20px;
+       }
+        .contenedor__titulo{
             text-align: center;
+            text-decoration: underline;
             padding-top: 20px;
             margin-bottom: 10px;
         }
-    }
-    .contenedorCarousel{
-        display: flex;
-        flex-wrap: nowrap;
-        .carousel-item{
-            height: 80vh;
-            .imgCarousel{
-                height: 800px;
-                width: 800px;
-                object-fit: cover;
-                margin: 0 50px;
-                flex: 1 0 auto;
+        .contenedor__info-principal{
+            margin: 20px;
+            text-align: center;
+            color: $color-texto;
+        }
+        .contenedor__principal-imagen{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .img-principal{
+                height: 500px;
+                width: 600px;
             }
         }
     }
@@ -32,59 +44,60 @@
 .section__contenidoAlbum{
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: $color-bg;
-    position: relative;
     .section__container__infoAlbum{
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         flex-wrap: wrap;
-        margin: 40px 200px;
-        border: 5px solid #000000;
-        border-radius: 10px;
+        margin: 40px 100px;
+        padding: 50px;
+        border: 5px solid #2a2828;
         background-color: $color-secundario;
         border-radius: 30px;
-        /* generé la sombra desde una pagina que nos brindó la profesora */
-        box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
-        -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
-        -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
-        .section__containerPortadaAlbum{
+    }
+    .section__containerPortadaAlbum{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .tituloAlbum{
             text-align: center;
-            .tituloAlbum{
-                text-align: center;
-                text-decoration: underline;
-                margin-bottom: 30px;
-            }
+            text-decoration: underline;
         }
-        .parrafoAlbum-fecha{
+        .container__InfoAlbum{
             display: flex;
+            align-items: center;
             justify-content: center;
-            inline-size: 1250px;
-            overflow-wrap: break-word;
-            margin: 0px 50px;
-            margin-bottom: 100px;
-        }
-        .parrafoAlbum{
-            text-align: left;
-            inline-size: 1250px;
-            overflow-wrap: break-word;
-            margin: 0px 50px;
-            margin-bottom: 120px;
-            color: $color-bg;
-        }
-        .container__imgAlbum{
-            display: flex;
-            vertical-align: middle;
-            margin-top: -150px;
-            .imgAlbum{
-                width: 400px;
-                height: 250px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .parrafoAlbum{
+                text-align: center;
+                margin: 10px;
+                color: $color-texto;
             }
         }
     }
+    .container__imgAlbum{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .imgAlbum{
+            margin-top: 20px;
+            height: 300px;
+            width: 400px;
+        }
+    }
 }
+
 
 /* SECTION VIDEOS EMBED */
 .section__embedVid{
@@ -98,15 +111,36 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
         margin-bottom: 100px;
+        &:after{
+            text-decoration: underline;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: $color-subr;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.6s ease-out;
+        }
+        &:hover::after{
+            text-decoration: underline;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
     }
-    .section__containerEmbed{
+    .section__containerEmbed{ /* ARREGLA ESTO */
         display: flex;
         .section__embedVid__videos{
             display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 50px;
+            padding-top: 10px;
             iframe{
-                width: 600px;
                 height: 400px;
+                width: 600px;
                 margin: 0px 50px;
                 padding-top: 10px;
             }
@@ -115,8 +149,12 @@
     .section__embedVid__verMas{
         margin-top: 100px;
         font-size: 20px;
-        .section__embedVid__verMas a p{
-            text-decoration: underline;
+        .section__embedVid__verMas{
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: underline;
+            }
         }
     }
 }

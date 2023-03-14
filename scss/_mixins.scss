@@ -1,0 +1,37 @@
+// MQ DE MEDIA QUERIES
+@mixin mqCEL-img-logo($height, $width){
+    height: $height;
+    width: $width;
+}
+
+@mixin flex-direction-center($direction){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+@mixin dimensiones-alto-ancho($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin dimensiones-m-p($width, $margin,$padding){
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+}
+@mixin dimensionesOnlyHeight($height){
+    height: $height;
+}
+@mixin dimesionesOnlyWidht($width){
+    width: $width;
+}
+@mixin marg-pad($margin,$padding){
+    margin: $margin;
+    padding: $padding;
+}
+@mixin dimesionesTotales($width, $height, $margin, $padding){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}

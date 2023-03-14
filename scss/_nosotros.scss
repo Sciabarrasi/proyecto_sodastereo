@@ -2,16 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
     background-color: $color-bg;
-    height: 100%;
+    width: 99vw;
     .contenedor__titulo-inicial{
         display: flex;
         align-items: center;
         justify-content: center;
         text-shadow: -1px 5px 7px rgba(0,0,0,0.40);
-        margin: 10px;
+        width: 100vw;
+        margin: 20px;
     }
     .contenedor__containers-infoSodaStereo{
         display: flex;
@@ -19,16 +19,19 @@
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
-        .contenedor__origenSodaStereo{
+        .contenedor__infoSodaStereo{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             flex-wrap: wrap;
-            margin: 40px 200px;
+        }
+        .contenedor__origenSodaStereo{
+            @extend .contenedor__infoSodaStereo;
             border: 5px solid $color-primario;
             border-radius: 10px;
             background-color: rgb(207, 210, 210);
+            width: 80vw;
             .contenedor__info-titulo{
                 display: flex;
                 align-items: center;
@@ -37,84 +40,43 @@
                 text-decoration: underline;
             }
             .contenedor__info-texto{
-                margin: 30px;
-            }
-        }
-        .container__padre-fotos{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-            margin: 20px;
-            .container__img{
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                flex-direction: space-around;
-                margin: 10px;
-                margin-top: -20px;
-                .img__origenSoda{
-                    margin-top: 30px;
-                    height: 300px;
-                    width: 400px;
-                }
-                .img__Cerati{
-                    margin-top: 30px;
-                    height: 400px;
-                    width: 400px;
-                }
-                .img__Cerati-mid{
-                    margin-top: 30px;
-                    height: 400px;
-                    width: 600px;
-                }
-                .img__Cerati-der{
-                    margin-top: 30px;
-                    height: 400px;
-                    width: 400px;
+                margin: 30px;
+                .container__padre-fotos{
+                    @extend .contenedor__info-texto;
+                    flex-direction: row;
+                    margin: 20px;
+                    .container__img{
+                        @extend .contenedor__info-texto;
+                        flex-direction: space-around;
+                        margin: 10px;
+                        margin-top: -20px;
+                        .img__origenSoda{
+                            margin-top: 30px;
+                            height: 300px;
+                            width: 400px;
+                        }
+                        .img__Cerati{
+                            margin-top: 30px;
+                            height: 400px;
+                            width: 400px;
+                        }
+                        .img__Cerati-mid{
+                            margin-top: 30px;
+                            height: 400px;
+                            width: 600px;
+                        }
+                        .img__Cerati-der{
+                            margin-top: 30px;
+                            height: 400px;
+                            width: 400px;
+                        }
+                    }
                 }
             }
         }
     }
 }
-
-
-
-/* ---- INICIA ESTILOS NOSOTROS.HTML 
-.img__Cerati{
-    margin-top: 30px;
-    height: 400px;
-    width: 400px;
-}
-.img__Cerati-mid{
-    height: 400px;
-    width: 600px;
-}
-.img__Cerati-der{
-    height: 400px;
-    widows: 400px;
-}
-
-
-.container__contenidoSoda{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    background-color: $color-secundario;
-    border-radius: 30px;
-    margin: 125px 100px;
-    box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
-    -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
-    -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.77);
-}
-.containerInfoOrigen{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: -10px;
-    text-decoration: underline;
-}
-*/
