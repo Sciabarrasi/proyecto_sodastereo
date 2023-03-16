@@ -395,7 +395,7 @@
             align-items: map-get($estilos-div, alignC);
             justify-content: map-get($estilos-div, justifyC);
             flex-direction: map-get($estilos-div, directionC);
-            flex-wrap: map-get($estilos-div , wrapped);
+            flex-wrap: map-get($estilos-div, wrapped);
             .contenedorInfoGiras{
                 display: map-get($estilos-div, d-flex);
                 align-items: map-get($estilos-div, alignC);
@@ -406,14 +406,33 @@
                 border: map-get($estilos-bordes, borde-solid-principal);
                 border-radius: map-get($estilos-bordes, radio-borde10);
                 background-color: rgb(207, 210, 210);
-                .containerGiras-titulo{
-                    display: map-get($estilos-div, d-flex);
-                    align-items: map-get($estilos-div, alignC);
-                    justify-content: map-get($estilos-div, justifyC);
-                    margin-top: 10px;
+                .contenedorContenido{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 5px;
                 }
-                .contenedorTexto{
-                    margin: 30px;
+                .imgGira{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px;
+                }
+                .imagenGira{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: 200px;
+                }
+                .imagenGiraLanguis{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 40px;
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
@@ -1426,27 +1445,49 @@
         .containerTimeline{
             display: map-get($estilos-div, d-flex);
             align-items: map-get($estilos-div, alignC);
-            justify-content: map-get($estilos-div, justifyC);
+            justify-content: map-get($estilos-div, btwn);
             flex-direction: map-get($estilos-div, directionC);
             flex-wrap: map-get($estilos-div, wrapped);
             .contenedorInfoGiras{
-                display: map-get($estilos-div, d-flex);
-                align-items: map-get($estilos-div, alignC);
-                justify-content: map-get($estilos-div, justifyC);
-                flex-direction: map-get($estilos-div, directionC);
-                flex-wrap: map-get($estilos-div, wrapped);
+                display: grid;
+                grid-auto-rows: 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 0px 30px;
+                grid-template-areas:
+                ". .";
                 margin: 40px 100px;
                 border: map-get($estilos-bordes, borde-solid-principal);
                 border-radius: map-get($estilos-bordes, radio-borde10);
                 background-color: rgb(207, 210, 210);
-                .containerGiras-titulo{
-                    display: map-get($estilos-div, d-flex);
-                    align-items: map-get($estilos-div, alignC);
-                    justify-content: map-get($estilos-div, justifyC);
-                    margin-top: 10px;
+                .contenedorContenido{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-left: 40px;
                 }
-                .contenedorTexto{
-                    margin: 30px;
+                .imgGira{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px;
+                }
+                .imagenGira{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 40px;
+                    width: 400px;
+                    height: 300px;
+                }
+                .imagenGiraLanguis{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 40px;
+                    width: 400px;
+                    height: 400px;
                 }
             }
         }
