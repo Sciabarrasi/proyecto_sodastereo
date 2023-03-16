@@ -222,9 +222,11 @@
                 -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.45);
                 -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.45);
                 .tituloAlbumes{
+                    color: map-get($estilos-textos, colorTitulos);
                     text-align: map-get($estilos-textos, textoC);
                 }
                 .fechaAlbumes{
+                    color: map-get($estilos-textos, colorTitulos);
                     text-align: map-get($estilos-textos, textoC);
                     margin-bottom: 5px;
                     text-decoration: map-get($estilos-textos, textoSubr);
@@ -564,6 +566,7 @@
            }
             .contenedor__titulo{
                 h1{
+                    color: map-get($estilos-textos, colorTitulos);
                     font-size: 24px;
                     text-align: map-get($estilos-textos, textoC);
                     text-decoration: map-get($estilos-textos, textoSubr);
@@ -618,6 +621,7 @@
             justify-content: map-get($estilos-div, justifyC);
             flex-direction: map-get($estilos-div, directionC);
             .tituloAlbum{
+                color: map-get($estilos-textos, colorTitulos);
                 text-align: map-get($estilos-textos, textoC);
                 text-decoration: map-get($estilos-textos, textoSubr);
             }
@@ -716,10 +720,12 @@
                 -webkit-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.45);
                 -moz-box-shadow: -1px 2px 16px 11px rgba(0,0,0,0.45);
                 .tituloAlbumes{
+                    color: map-get($estilos-textos, colorTitulos);
                     font-size: 22px;
                     text-align: map-get($estilos-textos, textoC);
                 }
                 .fechaAlbumes{
+                    color: map-get($estilos-textos, colorTitulos);
                     font-size: 14px;
                     margin-bottom: 5px;
                     text-align: map-get($estilos-textos, textoC);

@@ -617,8 +617,10 @@ body {
         -webkit-box-shadow: -1px 2px 16px 11px rgba(0, 0, 0, 0.45);
         -moz-box-shadow: -1px 2px 16px 11px rgba(0, 0, 0, 0.45); }
         .section__contenidoAlbumes .containerPadre .containerAlbum .tituloAlbumes {
+          color: #F5F5F5;
           text-align: center; }
         .section__contenidoAlbumes .containerPadre .containerAlbum .fechaAlbumes {
+          color: #F5F5F5;
           text-align: center;
           margin-bottom: 5px;
           text-decoration: underline; }
@@ -908,6 +910,7 @@ body {
         margin: 10px;
         padding: 0px; }
       .colorMain .section__principal .contenedor__titulo h1 {
+        color: #F5F5F5;
         font-size: 24px;
         text-align: center;
         text-decoration: underline; }
@@ -962,6 +965,7 @@ body {
       justify-content: center;
       flex-direction: column; }
       .section__contenidoAlbum .section__containerPortadaAlbum .tituloAlbum {
+        color: #F5F5F5;
         text-align: center;
         text-decoration: underline; }
       .section__contenidoAlbum .section__containerPortadaAlbum .container__InfoAlbum {
@@ -1043,9 +1047,11 @@ body {
         -webkit-box-shadow: -1px 2px 16px 11px rgba(0, 0, 0, 0.45);
         -moz-box-shadow: -1px 2px 16px 11px rgba(0, 0, 0, 0.45); }
         .section__contenidoAlbumes .containerPadre .containerAlbum .tituloAlbumes {
+          color: #F5F5F5;
           font-size: 22px;
           text-align: center; }
         .section__contenidoAlbumes .containerPadre .containerAlbum .fechaAlbumes {
+          color: #F5F5F5;
           font-size: 14px;
           margin-bottom: 5px;
           text-align: center;
