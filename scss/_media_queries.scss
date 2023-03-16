@@ -65,6 +65,7 @@
            }
             .contenedor__titulo{
                 h1{
+                    color: map-get($estilos-textos, colorTitulos);
                     font-size: 24px;
                     text-align: map-get($estilos-textos, textoC);
                     text-decoration: map-get($estilos-textos, textoSubr);
@@ -119,6 +120,7 @@
             justify-content: map-get($estilos-div, justifyC);
             flex-direction: map-get($estilos-div, directionC);
             .tituloAlbum{
+                color: map-get($estilos-textos, colorTitulos);
                 text-align: map-get($estilos-textos, textoC);
                 text-decoration: map-get($estilos-textos, textoSubr);
             }

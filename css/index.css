@@ -483,6 +483,7 @@ body {
         margin: 10px;
         padding: 0px; }
       .colorMain .section__principal .contenedor__titulo h1 {
+        color: #F5F5F5;
         font-size: 24px;
         text-align: center;
         text-decoration: underline; }
@@ -537,6 +538,7 @@ body {
       justify-content: center;
       flex-direction: column; }
       .section__contenidoAlbum .section__containerPortadaAlbum .tituloAlbum {
+        color: #F5F5F5;
         text-align: center;
         text-decoration: underline; }
       .section__contenidoAlbum .section__containerPortadaAlbum .container__InfoAlbum {
